@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: real-pipeline-run-5
+spec:
+  pipelineRef:
+    name: real-pipeline
+  workspaces:
+    - name: source
+      emptyDir: {}
